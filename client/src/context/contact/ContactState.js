@@ -12,7 +12,7 @@ import {
   CLEAR_FILTER
 } from "../types";
 
-const contactState = props => {
+const ContactState = props => {
   const initialState = {
     contacts: [
       {
@@ -34,12 +34,12 @@ const contactState = props => {
         name: "Jerry Seinfeld",
         email: "jseinfeld@gmail.com",
         phone: "333-333-3333",
-        type: "professional"
+        type: "JERRY"
       }
     ]
   };
 
-  const [state, dispatch] = useReducer(contactReducer, initialState);
+  const [state, dispatch] = useReducer(ContactReducer, initialState);
 
   // Add Contact
 
