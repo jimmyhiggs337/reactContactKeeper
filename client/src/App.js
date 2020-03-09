@@ -11,7 +11,7 @@ const App = () => {
     <ContactState>
       <Router>
         <Fragment>
-          <Navbar></Navbar>
+          <Navbar />
           <div className="container"></div>
           <Switch>
             <Route exact path="/" component={Home} />
