@@ -21,7 +21,9 @@ export default (state, action) => {
     case DELETE_CONTACT:
       return {
         ...state,
-        contacts: state.contacts.filter(contact => contact.id != action.payload)
+        contacts: state.contacts.filter(
+          contact => contact.id !== action.payload
+        )
       };
     case UPDATE_CONTACT:
       return {
